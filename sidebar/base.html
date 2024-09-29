@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>[Title] | Passenger Seat</title>
+    <!-- just use template inheritance or put the name ng module -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="tab_img.png" />
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="base.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesom Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Datatable -->
+    <link rel="stylesheet"
+    href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.css" /
+  </head>
+
+  <body>
+    <!-- up to you if you want to use svg or cdn -->
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <img src="passenger_seat_logo.png" alt="Passenger Seat Logo" />Passenger
+        Seat
+      </div>
+
+      <div class="navbar_content">
+        <i class="fa-solid fa-bell fontawesome_icon"></i>
+        <img
+          src="passenger_seat_logo.png"
+          alt="User Profile"
+          class="profile"
+        /><!-- up to you if user profile or initials or name -->
+      </div>
+
+      <!-- 
+        for directory in the nav 
+        for example: [icon] Dashboard > [icon] Financial Tracking > [icon] Revenue Tracking
+       -->
+      <!-- or a searchbar -->
+      <!-- <div></div> uncomment this if you want to implement whats on top of this -->
+    </nav>
+
+    <!-- i used fontawesome for icons sa left side ng menu items. yung arrow naman is from boxicons -->
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_dahsboard"></div>
+          <!-- dashboard -->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </span>
+              <span class="navlink">Dashboard</span>
+            </a>
+          </li>
+          <!-- end -->
+
+          <!-- financial tracking -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-coins"></i>
+              </span>
+              <span class="navlink">Financial Tracking</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">Revenue Tracking</a>
+              <a href="#" class="nav_link sublink">Expense Tracking</a>
+              <a href="#" class="nav_link sublink">Profit Revenue</a>
+            </ul>
+          </li>
+          <!-- end -->
+        </ul>
+        <!-- end -->
+
+        <ul class="menu_items">
+          <div class="menu_title menu_ledger"></div>
+          <!-- books management -->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-book"></i>
+              </span>
+              <span class="navlink">Books Management</span>
+            </a>
+          </li>
+          <!-- end -->
+
+          <!-- chart of accounts -->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-clipboard-list"></i>
+              </span>
+              <span class="navlink">Chart of Accounts</span>
+            </a>
+          </li>
+          <!-- end -->
+
+          <!-- journal entries -->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-pen"></i>
+              </span>
+              <span class="navlink">Journal Entry</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+              </span>
+              <span class="navlink">General Ledger</span>
+            </a>
+          </li>
+          <!-- end -->
+
+          <!-- financial reporting -->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-file-arrow-down"></i>
+              </span>
+              <span class="navlink">Financial Reporting</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu_items">
+          <div class="menu_title menu_setting"></div>
+          <!-- manage users -->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-users"></i>
+              </span>
+              <span class="navlink">User Management</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- main content wrapper -->
+    <div class="main_content_wrapper">
+      <div class="main_content"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="base.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
+  </body>
+</html>
